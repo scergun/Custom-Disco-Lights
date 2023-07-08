@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DISCO LIGHTS</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+    </style>
+
+
+</head>
+
+<body>
+
+
+    <div id="body1">
+        <h1 id="header">CUSTOM DISCO LIGHTS</h1>
+    </div>
+
+    <h2 id="header1">Choose a Color Palette</h2>
+
+    <div class="palettes">
+        <div id="palbox1" class="pal-ind">
+            <div class="color-schemes">
+                <div class="items1" id="item-1"> </div>
+                <div class="items1" id="item-2"> </div>
+                <div class="items1" id="item-3"> </div>
+                <div class="items1" id="item-4"> </div>
+                <div class="items1" id="item-5"> </div>
+                <div class="items1" id="item-6"> </div>
+            </div>
+            <p>Classic Colors</p>
+        </div>
+        <div id="palbox2" class="pal-ind">
+            <div class="color-schemes">
+                <div class="items2" id="item-7"> </div>
+                <div class="items2" id="item-8"> </div>
+                <div class="items2" id="item-9"> </div>
+                <div class="items2" id="item-10"> </div>
+                <div class="items2" id="item-11"> </div>
+                <div class="items2" id="item-12"> </div>
+            </div>
+            <p>Bisexual Colors</p>
+        </div>
+
+        <div id="palbox3" class="pal-ind">
+            <div class="color-schemes">
+                <div class="items3" id="item-13"> </div>
+                <div class="items3" id="item-14"> </div>
+                <div class="items3" id="item-15"> </div>
+                <div class="items3" id="item-16"> </div>
+                <div class="items3" id="item-17"> </div>
+                <div class="items3" id="item-18"> </div>
+            </div>
+            <p>Pastel Colors</p>
+        </div>
+        <div id="palbox4" class="pal-ind">
+            <div class="color-schemes">
+                <div class="items4" id="item-19"> </div>
+                <div class="items4" id="item-20"> </div>
+                <div class="items4" id="item-21"> </div>
+                <div class="items4" id="item-22"> </div>
+                <div class="items4" id="item-23"> </div>
+                <div class="items4" id="item-24"> </div>
+            </div>
+            <p>Retro Colors</p>
+        </div>
+        <div id="palbox5" class="pal-ind">
+            <div class="color-schemes">
+                <div class="items5" id="item-25"> </div>
+                <div class="items5" id="item-26"> </div>
+                <div class="items5" id="item-27"> </div>
+                <div class="items5" id="item-28"> </div>
+                <div class="items5" id="item-29"> </div>
+                <div class="items5" id="item-30"> </div>
+            </div>
+            <p>Summer Colors</p>
+        </div>
+    </div>
+
+    <h2 id="header2">Choose a Frequency</h2>
+
+    <div class="slidecontainer">
+        <input type="range" id="myRange" min="1" max="20" value="10" class="slider" oninput="setFrequency()">
+    </div>
+
+    <div class="freqs">
+        <p>Low Frequency</p>
+        <p>High Frequency</p>
+    </div>
+
+    <form>
+        <input id="sub" type="submit" value="Submit">
+    </form>
+
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <p>Please choose a color palette!</p>
+        </div>
+    </div>
+    <div class="modal-overlay"></div>
+
+
+    <script src="script.js"></script>
+</body>
+
+
+</html>

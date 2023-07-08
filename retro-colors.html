@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DISCO LIGHTS</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+    </style>
+
+
+</head>
+
+<body>
+    <div id="newBody" style="background-color:rgb(0, 95, 115);height:100vh">
+
+        <form>
+            <input type="submit" value="Back" id="subx">
+        </form>
+    </div>
+
+    <script>
+        window.onload = function () {
+            const frequency = localStorage.getItem('frequency');
+            console.log(frequency); // Frekansı konsola yazdırır
+
+            let newBody = document.getElementById("newBody");
+
+            function changeFunc() {
+                if (newBody.style.backgroundColor === "rgb(0, 95, 115)") {
+                    newBody.style.backgroundColor = "rgb(10, 147, 150)";
+                } else if (newBody.style.backgroundColor === "rgb(10, 147, 150)") {
+                    newBody.style.backgroundColor = "rgb(232, 215, 165)";
+                } else if (newBody.style.backgroundColor === "rgb(232, 215, 165)") {
+                    newBody.style.backgroundColor = "rgb(237, 155, 0)";
+                } else if (newBody.style.backgroundColor === "rgb(237, 155, 0)") {
+                    newBody.style.backgroundColor = "rgb(187, 63, 2)";
+                } else if (newBody.style.backgroundColor === "rgb(187, 63, 2)") {
+                    newBody.style.backgroundColor = "rgb(176, 32, 18)";
+                } else if (newBody.style.backgroundColor === "rgb(176, 32, 18)") {
+                    newBody.style.backgroundColor = "rgb(0, 95, 115)";
+                } else {
+                    // Default durumu için bir değer belirleyebilirsiniz
+                }
+            }
+
+            setInterval(changeFunc, frequency);
+        }
+
+        let inpBtnDOM2 = document.getElementById("subx");
+
+        inpBtnDOM2.addEventListener("click", sendBack);
+
+        function sendBack(e) {
+            e.preventDefault();
+            console.log("tıklandı gari");
+            window.location.href = "index.html";
+            localStorage.setItem('frequency', '250');
+
+            // Slider'ı varsayılan değere (10) ayarla
+            sliderDOM.value = 10;
+
+            // Handle'ı varsayılan konuma (10) taşı
+            const handlePosition = ((sliderDOM.value - sliderDOM.min) / (sliderDOM.max - sliderDOM.min)) * 100;
+            sliderDOM.style.background = `linear-gradient(to right, #5501fd 0%, #5501fd ${handlePosition}%, #fff ${handlePosition}%, white 100%)`;
+        }
+
+    </script>
+
+</body>
+
+
+</html>

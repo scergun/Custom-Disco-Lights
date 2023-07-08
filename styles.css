@@ -1,0 +1,374 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#newBody {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: #a0c6ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 65px;
+    padding: 0;
+
+}
+
+#body1 h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    font-family: "sans-serif", "roboto";
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 3px 3px #5501fd;
+}
+
+#header1 {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    font-family: "sans-serif", "roboto";
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 3px 3px #5501fd;
+}
+
+#header2 {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    font-family: "sans-serif", "roboto";
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 3px 3px #5501fd;
+}
+
+.palettes {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    justify-content: center;
+    flex: 1;
+    width: 100%;
+}
+
+.palettes p {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    font-family: sans-serif, "roboto";
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.pal-ind {
+    margin: 0px 10px;
+    padding: 20px;
+    border: 4px solid hsla(0, 0%, 100%, 0.699);
+    border-radius: 6px;
+    max-width: 120px;
+    cursor: pointer;
+}
+
+.pal-ind:hover {
+    border: 4px solid hsla(0, 0%, 100%, 1);
+}
+
+.color-schemes {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+
+
+}
+
+.slidecontainer {
+    margin-top: 50px;
+    width: 48%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50 auto;
+}
+
+.slider {
+    -webkit-appearance: none;
+    /* Override default CSS styles */
+    appearance: none;
+
+    /* Full-width */
+    height: 25px;
+    /* Specified height */
+    background: white;
+    /* Grey background */
+    outline: none;
+    /* Remove outline */
+    opacity: 0.7;
+    /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s;
+    /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+    border-radius: 10px;
+    width: 100%;
+
+}
+
+.slider:hover {
+    opacity: 1;
+    /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    /* Override default look */
+    appearance: none;
+    width: 25px;
+    /* Set a specific slider handle width */
+    height: 25px;
+    /* Slider handle height */
+    background: #5501fd;
+    /* Green background */
+    cursor: pointer;
+    /* Cursor on hover */
+    border-radius: 10px;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    /* Set a specific slider handle width */
+    height: 25px;
+    /* Slider handle height */
+    background: #5501fd;
+    /* Green background */
+    cursor: pointer;
+    /* Cursor on hover */
+}
+
+.freqs {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.freqs p {
+    font-size: 20px;
+    font-family: sans-serif, "roboto";
+    color: white;
+    margin: 10px 310px;
+    text-shadow: 2px 1px #5501fd;
+}
+
+form {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+input {
+    width: 140px;
+    height: 60px;
+    border: 4px solid white;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+    border-radius: 6px;
+    background-color: #a0c6ff;
+    color: white;
+    font-size: 30px;
+    font-family: sans-serif, "roboto";
+    font-weight: 600;
+    cursor: pointer;
+}
+
+input:hover {
+    opacity: 1;
+    text-shadow: 2px 1px #5501fd;
+
+}
+
+.items1,
+.items2,
+.items3,
+.items4,
+.items5 {
+    height: 100px;
+    width: 20px;
+}
+
+#item-1 {
+    background-color: red;
+}
+
+#item-2 {
+    background-color: orange;
+}
+
+#item-3 {
+    background-color: yellow;
+}
+
+#item-4 {
+    background-color: green;
+}
+
+#item-5 {
+    background-color: blue;
+}
+
+#item-6 {
+    background-color: purple;
+}
+
+#item-7 {
+    background-color: #034EA2;
+}
+
+#item-8 {
+    background-color: rgb(48, 58, 153);
+}
+
+#item-9 {
+    background-color: rgb(94, 35, 144);
+}
+
+#item-10 {
+    background-color: rgb(139, 13, 136);
+}
+
+#item-11 {
+    background-color: rgb(192, 8, 132);
+}
+
+#item-12 {
+    background-color: rgb(240, 11, 127);
+}
+
+#item-13 {
+    background-color: rgb(255, 179, 186);
+}
+
+#item-14 {
+    background-color: rgb(255, 223, 186);
+}
+
+#item-15 {
+    background-color: rgb(255, 255, 186);
+}
+
+#item-16 {
+    background-color: rgb(186, 255, 201);
+}
+
+#item-17 {
+    background-color: rgb(186, 225, 255);
+}
+
+#item-18 {
+    background-color: rgb(217, 208, 247);
+}
+
+#item-19 {
+    background-color: rgb(0, 95, 115);
+}
+
+#item-20 {
+    background-color: rgb(10, 147, 150);
+}
+
+#item-21 {
+    background-color: rgb(232, 215, 165);
+}
+
+#item-22 {
+    background-color: rgb(237, 155, 0);
+}
+
+#item-23 {
+    background-color: rgb(187, 63, 2);
+}
+
+#item-24 {
+    background-color: rgb(176, 32, 18);
+}
+
+#item-25 {
+    background-color: rgb(255, 89, 143);
+}
+
+#item-26 {
+    background-color: rgb(253, 138, 94);
+}
+
+#item-27 {
+    background-color: rgb(224, 227, 3);
+}
+
+#item-28 {
+    background-color: rgb(0, 221, 221);
+}
+
+#item-29 {
+    background-color: rgb(0, 191, 175);
+}
+
+#item-30 {
+    background-color: rgb(0, 154, 239);
+}
+
+/* Modal Container */
+.modal {
+    display: none;
+    /* Başlangıçta gizli */
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 435px;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+
+    /* Arkaplan rengi ve saydamlık */
+}
+
+/* Modal İçeriği */
+.modal-content {
+    font-family: sans-serif, "roboto";
+    color: white;
+    text-shadow: 2px 1px #5501fd;
+    font-size: 20px;
+    text-align: center;
+    background-color: #a0c6ff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 4px solid rgba(255, 255, 255, 0.699);
+    width: 300px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+}
+
+#subx {
+    margin-top: 755px;
+}
